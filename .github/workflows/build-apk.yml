@@ -27,6 +27,28 @@ jobs:
           channel: stable
           cache: true
 
+      - name: Generate app icons
+        run: |
+          python3 - <<'EOF'
+          import struct, zlib, os
+
+          def make_png(size, color=(0, 188, 212)):
+              def chunk(t, d):
+                  c = t + d
+                  return struct.pack('>I', len(d)) + c + struct.pack('>I', zlib.crc32(c) & 0xffffffff)
+              ihdr = chunk(b'IHDR', struct.pack('>IIBBBBB', size, size, 8, 2, 0, 0, 0))
+              raw = b''.join(b'\x00' + bytes(color) * size for _ in range(size))
+              idat = chunk(b'IDAT', zlib.compress(raw, 9))
+              iend = chunk(b'IEND', b'')
+              return b'\x89PNG\r\n\x1a\n' + ihdr + idat + iend
+
+          for d, s in [('mdpi',48),('hdpi',72),('xhdpi',96),('xxhdpi',144),('xxxhdpi',192)]:
+              p = f'android/app/src/main/res/mipmap-{d}'
+              os.makedirs(p, exist_ok=True)
+              open(f'{p}/ic_launcher.png', 'wb').write(make_png(s))
+              print(f'Created {p}/ic_launcher.png')
+          EOF
+
       - name: Get dependencies
         run: flutter pub get
 
