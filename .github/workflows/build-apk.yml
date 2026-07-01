@@ -1,0 +1,64 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RadarAlert-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 30
+
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/app/outputs/flutter-apk/app-release.apk
+          name: RadarAlert ${{ github.ref_name }}
+          body: |
+            ## RadarAlert ${{ github.ref_name }}
+
+            ### Instalação
+            1. Baixe o arquivo `app-release.apk`
+            2. No Android, vá em Configurações > Segurança > Fontes desconhecidas (ative)
+            3. Abra o arquivo APK e instale
+
+            ### Recursos
+            - Velocímetro analógico e digital em tempo real
+            - Alertas sonoros, vibração e notificação visual de radares
+            - Mapa integrado com OpenStreetMap
+            - Banco de dados offline de radares
+            - Personalizável (distância, volume, vibração)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

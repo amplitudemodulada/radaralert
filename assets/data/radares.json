@@ -1,0 +1,606 @@
+{
+  "version": 2,
+  "updated_at": "2026-07-01",
+  "radares": [
+    {
+      "id": 1,
+      "latitude": -23.5629,
+      "longitude": -46.6544,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Paulista - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "latitude": -23.5475,
+      "longitude": -46.6361,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Brigadeiro Luís Antônio - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "latitude": -23.5330,
+      "longitude": -46.6395,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "norte",
+      "descricao": "Marginal Tietê - Sentido Ayrton Senna - SP",
+      "ativo": true
+    },
+    {
+      "id": 4,
+      "latitude": -23.5485,
+      "longitude": -46.6452,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "sul",
+      "descricao": "Marginal Pinheiros - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 5,
+      "latitude": -23.6820,
+      "longitude": -46.6250,
+      "tipo": "pedagio",
+      "velocidade_maxima": 80,
+      "direcao": "ambos",
+      "descricao": "Rodovia Anchieta km 15 - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 6,
+      "latitude": -23.5010,
+      "longitude": -46.8580,
+      "tipo": "fixo",
+      "velocidade_maxima": 90,
+      "direcao": "ambos",
+      "descricao": "Rodovia Raposo Tavares km 22 - SP",
+      "ativo": true
+    },
+    {
+      "id": 7,
+      "latitude": -23.4720,
+      "longitude": -46.5330,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Zaki Narchi - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 8,
+      "latitude": -23.5560,
+      "longitude": -46.7320,
+      "tipo": "movel",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Rebouças - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 9,
+      "latitude": -23.6100,
+      "longitude": -46.6980,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Cupecê - Santo André - SP",
+      "ativo": true
+    },
+    {
+      "id": 10,
+      "latitude": -23.5250,
+      "longitude": -46.5890,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "norte",
+      "descricao": "Av. Celso Garcia - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 11,
+      "latitude": -22.9068,
+      "longitude": -43.1729,
+      "tipo": "fixo",
+      "velocidade_maxima": 80,
+      "direcao": "ambos",
+      "descricao": "Linha Amarela - Rio de Janeiro",
+      "ativo": true
+    },
+    {
+      "id": 12,
+      "latitude": -22.9640,
+      "longitude": -43.1807,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Brasil - Rio de Janeiro",
+      "ativo": true
+    },
+    {
+      "id": 13,
+      "latitude": -22.9712,
+      "longitude": -43.3490,
+      "tipo": "pedagio",
+      "velocidade_maxima": 100,
+      "direcao": "ambos",
+      "descricao": "Rodovia Presidente Dutra km 195 - RJ",
+      "ativo": true
+    },
+    {
+      "id": 14,
+      "latitude": -22.9083,
+      "longitude": -43.2436,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. das Américas - Barra da Tijuca - RJ",
+      "ativo": true
+    },
+    {
+      "id": 15,
+      "latitude": -22.8872,
+      "longitude": -43.1056,
+      "tipo": "fixo",
+      "velocidade_maxima": 80,
+      "direcao": "sul",
+      "descricao": "Ponte Rio-Niterói - RJ",
+      "ativo": true
+    },
+    {
+      "id": 16,
+      "latitude": -22.9250,
+      "longitude": -43.4580,
+      "tipo": "fixo",
+      "velocidade_maxima": 90,
+      "direcao": "ambos",
+      "descricao": "Rodovia Washington Luís - RJ",
+      "ativo": true
+    },
+    {
+      "id": 17,
+      "latitude": -22.9435,
+      "longitude": -43.1792,
+      "tipo": "movel",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Túnel Rebouças - Rio de Janeiro",
+      "ativo": true
+    },
+    {
+      "id": 18,
+      "latitude": -22.8781,
+      "longitude": -43.2558,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Niemeyer - Rio de Janeiro",
+      "ativo": true
+    },
+    {
+      "id": 19,
+      "latitude": -22.9547,
+      "longitude": -43.2101,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Presidente Vargas - Rio de Janeiro",
+      "ativo": true
+    },
+    {
+      "id": 20,
+      "latitude": -22.9810,
+      "longitude": -43.2332,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "ambos",
+      "descricao": "Av. Automóvel Clube - Rio de Janeiro",
+      "ativo": true
+    },
+    {
+      "id": 21,
+      "latitude": -19.9191,
+      "longitude": -43.9378,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Antônio Carlos - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 22,
+      "latitude": -19.9245,
+      "longitude": -43.9352,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Afonso Pena - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 23,
+      "latitude": -19.9010,
+      "longitude": -43.9700,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "sul",
+      "descricao": "Anel Rodoviário BR-262 - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 24,
+      "latitude": -19.9560,
+      "longitude": -43.9880,
+      "tipo": "pedagio",
+      "velocidade_maxima": 80,
+      "direcao": "ambos",
+      "descricao": "BR-040 km 10 - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 25,
+      "latitude": -19.8720,
+      "longitude": -43.9630,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Pedro II - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 26,
+      "latitude": -19.9380,
+      "longitude": -43.9210,
+      "tipo": "movel",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Raja Gabaglia - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 27,
+      "latitude": -19.9120,
+      "longitude": -43.9480,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "norte",
+      "descricao": "Av. Cristiano Machado - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 28,
+      "latitude": -20.0070,
+      "longitude": -44.0420,
+      "tipo": "fixo",
+      "velocidade_maxima": 80,
+      "direcao": "ambos",
+      "descricao": "BR-381 Fernão Dias km 441 - MG",
+      "ativo": true
+    },
+    {
+      "id": 29,
+      "latitude": -19.9750,
+      "longitude": -43.9050,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Nossa Sra. do Carmo - BH",
+      "ativo": true
+    },
+    {
+      "id": 30,
+      "latitude": -19.9640,
+      "longitude": -43.8960,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Vilarinho - Venda Nova - BH",
+      "ativo": true
+    },
+    {
+      "id": 31,
+      "latitude": -25.4290,
+      "longitude": -49.2710,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Cândido Hartmann - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 32,
+      "latitude": -25.4440,
+      "longitude": -49.2760,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Sete de Setembro - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 33,
+      "latitude": -25.4900,
+      "longitude": -49.3180,
+      "tipo": "pedagio",
+      "velocidade_maxima": 100,
+      "direcao": "ambos",
+      "descricao": "BR-376 km 647 - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 34,
+      "latitude": -25.4610,
+      "longitude": -49.2580,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Iguaçu - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 35,
+      "latitude": -25.4050,
+      "longitude": -49.3380,
+      "tipo": "fixo",
+      "velocidade_maxima": 80,
+      "direcao": "norte",
+      "descricao": "BR-116 km 99 - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 36,
+      "latitude": -25.4350,
+      "longitude": -49.2410,
+      "tipo": "movel",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Victor Ferreira do Amaral - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 37,
+      "latitude": -25.5220,
+      "longitude": -49.2980,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "ambos",
+      "descricao": "Contorno Sul - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 38,
+      "latitude": -25.3960,
+      "longitude": -49.2240,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "sul",
+      "descricao": "Linha Verde - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 39,
+      "latitude": -25.4750,
+      "longitude": -49.2890,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Marechal Floriano - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 40,
+      "latitude": -25.4180,
+      "longitude": -49.2650,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. João Gualberto - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 41,
+      "latitude": -30.0346,
+      "longitude": -51.2177,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Ipiranga - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 42,
+      "latitude": -30.0488,
+      "longitude": -51.2040,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Borges de Medeiros - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 43,
+      "latitude": -30.0720,
+      "longitude": -51.1850,
+      "tipo": "pedagio",
+      "velocidade_maxima": 80,
+      "direcao": "ambos",
+      "descricao": "Freeway BR-290 km 97 - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 44,
+      "latitude": -30.0150,
+      "longitude": -51.2310,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Protásio Alves - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 45,
+      "latitude": -30.0890,
+      "longitude": -51.2420,
+      "tipo": "fixo",
+      "velocidade_maxima": 80,
+      "direcao": "sul",
+      "descricao": "BR-116 Gravataí - RS",
+      "ativo": true
+    },
+    {
+      "id": 46,
+      "latitude": -30.0610,
+      "longitude": -51.2240,
+      "tipo": "movel",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Assis Brasil - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 47,
+      "latitude": -29.9830,
+      "longitude": -51.1960,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "norte",
+      "descricao": "Av. dos Estados - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 48,
+      "latitude": -30.0270,
+      "longitude": -51.2560,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Bento Gonçalves - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 49,
+      "latitude": -30.0560,
+      "longitude": -51.1700,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. Mauá - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 50,
+      "latitude": -30.0430,
+      "longitude": -51.2190,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "sul",
+      "descricao": "Av. Cristóvão Colombo - Porto Alegre",
+      "ativo": true
+    },
+    {
+      "id": 51,
+      "latitude": -23.5830,
+      "longitude": -46.6500,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Santo Amaro - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 52,
+      "latitude": -23.5175,
+      "longitude": -46.7820,
+      "tipo": "pedagio",
+      "velocidade_maxima": 120,
+      "direcao": "ambos",
+      "descricao": "Rodovia Castello Branco km 25 - SP",
+      "ativo": true
+    },
+    {
+      "id": 53,
+      "latitude": -22.9150,
+      "longitude": -43.1650,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "ambos",
+      "descricao": "Avenida Radial Oeste - Rio de Janeiro",
+      "ativo": true
+    },
+    {
+      "id": 54,
+      "latitude": -19.9320,
+      "longitude": -44.0020,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. Perimetral - Contagem - MG",
+      "ativo": true
+    },
+    {
+      "id": 55,
+      "latitude": -25.5160,
+      "longitude": -49.1780,
+      "tipo": "pedagio",
+      "velocidade_maxima": 110,
+      "direcao": "ambos",
+      "descricao": "BR-277 km 59 São José dos Pinhais - PR",
+      "ativo": true
+    },
+    {
+      "id": 56,
+      "latitude": -23.5380,
+      "longitude": -46.6210,
+      "tipo": "semaforo",
+      "velocidade_maxima": 50,
+      "direcao": "ambos",
+      "descricao": "Av. São João - São Paulo",
+      "ativo": true
+    },
+    {
+      "id": 57,
+      "latitude": -22.8960,
+      "longitude": -43.1330,
+      "tipo": "movel",
+      "velocidade_maxima": 80,
+      "direcao": "ambos",
+      "descricao": "Rodovia BR-101 Norte - RJ",
+      "ativo": true
+    },
+    {
+      "id": 58,
+      "latitude": -19.8650,
+      "longitude": -43.9850,
+      "tipo": "fixo",
+      "velocidade_maxima": 70,
+      "direcao": "ambos",
+      "descricao": "Rodovia MG-020 - Belo Horizonte",
+      "ativo": true
+    },
+    {
+      "id": 59,
+      "latitude": -25.4490,
+      "longitude": -49.3010,
+      "tipo": "fixo",
+      "velocidade_maxima": 60,
+      "direcao": "ambos",
+      "descricao": "Av. das Torres - Curitiba",
+      "ativo": true
+    },
+    {
+      "id": 60,
+      "latitude": -30.0180,
+      "longitude": -51.1820,
+      "tipo": "fixo",
+      "velocidade_maxima": 80,
+      "direcao": "norte",
+      "descricao": "Av. Sertório - Porto Alegre",
+      "ativo": true
+    }
+  ]
+}
