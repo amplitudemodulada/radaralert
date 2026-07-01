@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'dart:typed_data';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:vibration/vibration.dart';
 import '../models/alert_config.dart';
 
 class AlertService {
@@ -30,7 +30,6 @@ class AlertService {
 
   Future<void> playSpeedAlert(AlertConfig config) async {
     if (!config.soundEnabled) return;
-    // Two quick high beeps for speed excess
     final wav = _generateBeep(frequency: 1800, durationMs: 200);
     await _player.setVolume(config.volume);
     await _player.play(BytesSource(wav));
@@ -38,12 +37,12 @@ class AlertService {
 
   Future<void> vibrate(AlertConfig config, {bool intense = false}) async {
     if (!config.vibrationEnabled) return;
-    final hasVibrator = await Vibration.hasVibrator() ?? false;
-    if (!hasVibrator) return;
     if (intense) {
-      Vibration.vibrate(pattern: [0, 300, 100, 300]);
+      await HapticFeedback.heavyImpact();
+      await Future.delayed(const Duration(milliseconds: 100));
+      await HapticFeedback.heavyImpact();
     } else {
-      Vibration.vibrate(duration: 200);
+      await HapticFeedback.mediumImpact();
     }
   }
 
@@ -92,7 +91,6 @@ class AlertService {
       samples[i] = (sin(2 * pi * frequency * t) * amp * env).round();
     }
 
-    // WAV header (44 bytes) + PCM data
     final dataBytes = samples.buffer.asUint8List();
     final header = ByteData(44);
     void setStr(int offset, String s) {
@@ -115,7 +113,6 @@ class AlertService {
     setStr(36, 'data');
     header.setUint32(40, dataBytes.length, Endian.little);
 
-    return Uint8List.fromList(
-        [...header.buffer.asUint8List(), ...dataBytes]);
+    return Uint8List.fromList([...header.buffer.asUint8List(), ...dataBytes]);
   }
 }
